@@ -1,0 +1,138 @@
+#root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+h1{
+  text-shadow: 0px 1px 1px black;
+  letter-spacing: 0.1rem;
+  color: rgb(1, 1, 65);
+  
+}
+.banner{
+  background: linear-gradient(to right, #eef9fe, #edf7ff);
+ /* background-image: url('./assets/footerdown.png');
+  background-repeat: no-repeat;background-size: cover;
+  background-position: center;*/
+  height: 100vh;
+
+}
+.corefeaturesection{
+  background-size: 100% 100%;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+.ctaSection{
+background-size: 100% 100%;
+}
+
+/***** companiesList Part Css***/
+.companiesList{
+animation:10s infinite linear moveCompany;
+}
+@keyframes moveCompany {
+   0%{
+     top:0;
+    }
+  100%{
+    top:-50%;
+   }
+}
+.companies1{
+  background: linear-gradient(180deg, #f4f8ff, #fff0);
+}
+.companies2{
+  background: linear-gradient(0deg, #f4f8ff, #fff0);
+}
+
+
+
+
+.footer{
+ 
+  background-image: url('./assets/footer-down.png');
+  background-repeat: no-repeat;background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+input:focus-visible{outline: none;}
+button:focus-visible{outline: none;}
+
+nav li a{color: white;letter-spacing: 0.01rem;}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+*/
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+/*bg-gradient-to-l from-teal-600 from-20% via-teal-500 via-30% to-emerald-500 to-90%*/
